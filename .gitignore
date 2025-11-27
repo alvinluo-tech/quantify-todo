@@ -77,3 +77,4 @@ temp/
 # Documentation - ignore all .md files except README
 *.md
 !README.md
+!README.zh-CN.md

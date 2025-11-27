@@ -72,6 +72,51 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## 🚀 Deploy to Vercel
+
+### One-Click Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/alvinluo-tech/quantify-todo)
+
+### Manual Deploy
+
+1. **Push to GitHub:**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin your-repo-url
+   git push -u origin main
+   ```
+
+2. **Import to Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "New Project"
+   - Import your GitHub repository
+   - Vercel will auto-detect Next.js
+
+3. **Configure Environment Variables:**
+   
+   In Vercel dashboard, add these environment variables:
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+   ```
+
+4. **Deploy:**
+   - Click "Deploy"
+   - Vercel will build and deploy automatically
+   - Your app will be live at `https://your-project.vercel.app`
+
+### Important Notes
+
+- ✅ **No additional configuration needed** - Next.js App Router works out-of-the-box on Vercel
+- ✅ **Automatic HTTPS** - Vercel provides SSL certificates
+- ✅ **Edge Functions** - Server Actions run on Vercel Edge Network
+- ✅ **Preview Deployments** - Every git push gets a preview URL
+- ⚠️ **Environment Variables** - Must be set in Vercel dashboard (not in `.env.local`)
+- ⚠️ **Supabase RLS** - Ensure Row Level Security policies are properly configured
+
 ## ✨ Core Features
 
 ### 📋 Nested Task Hierarchy
@@ -347,6 +392,51 @@ npm run dev
 ```
 
 在浏览器中打开 [http://localhost:3000](http://localhost:3000)。
+
+## 🚀 部署到 Vercel
+
+### 一键部署
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/alvinluo-tech/quantify-todo)
+
+### 手动部署
+
+1. **推送到 GitHub:**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin 你的仓库地址
+   git push -u origin main
+   ```
+
+2. **导入到 Vercel:**
+   - 访问 [vercel.com](https://vercel.com)
+   - 点击 "New Project"
+   - 导入你的 GitHub 仓库
+   - Vercel 会自动检测 Next.js 项目
+
+3. **配置环境变量:**
+   
+   在 Vercel 控制台添加以下环境变量：
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=你的supabase地址
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=你的anon密钥
+   ```
+
+4. **部署:**
+   - 点击 "Deploy"
+   - Vercel 会自动构建和部署
+   - 你的应用将上线到 `https://你的项目名.vercel.app`
+
+### 重要说明
+
+- ✅ **无需额外配置** - Next.js App Router 在 Vercel 上开箱即用
+- ✅ **自动 HTTPS** - Vercel 提供 SSL 证书
+- ✅ **边缘函数** - Server Actions 运行在 Vercel Edge Network
+- ✅ **预览部署** - 每次 git push 都会生成预览 URL
+- ⚠️ **环境变量** - 必须在 Vercel 控制台设置（而非 `.env.local`）
+- ⚠️ **Supabase RLS** - 确保行级安全策略已正确配置
 
 ## ✨ 核心功能
 
